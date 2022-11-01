@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}
+.object-fill {
+  -o-object-fit: fill;
+  object-fit: fill;
+  border-radius: 20px;
+}
+.swiper {
+  padding: 10px !important;
+}
+@media (min-width: 1024px) {
+  .swiper {
+    padding: 40px !important;
+  }
+}
+.neumorphism {
+  /* box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff; */
+  /* box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
+    5px 5px 9px rgba(94, 104, 121, 0.3); */
+  /* box-shadow: -6px -6px 20px rgba(255,255,255,1), 6px 6px 20px rgba(0,0,0,0.1); */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.neumorphismbg {
+  /* background: #dde1e7; */
+  background: #fefefe;
+  /* background: #ebf5fc; */
+}
+.footerbg {
+  background-color: #1f2937;
+}
+.nummargin {
+  margin: -1.5px;
+}
+.numborder {
+  border-width: 1.7px;
+}
+.swiper-slide img {
+  /* width: unset; */
+  margin: auto;
+}
+.swiper-slide {
+  background: white;
+}
+.shadowj {
+  -moz-box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 15px 0px rgba(255, 255, 255, 0.5);
+}
