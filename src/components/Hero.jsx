@@ -108,6 +108,7 @@ export function Hero() {
       <Swiper
         spaceBetween={30}
         effect={'fade'}
+        loop={true}
         autoHeight={true}
         centeredSlides={true}
         autoplay={{
