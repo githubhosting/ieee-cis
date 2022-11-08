@@ -18,8 +18,19 @@ import logoStatamic from '@/images/logos/statamic.svg'
 import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
+import img1 from '@/images/heroimages/1 (1).jpg'
+import img2 from '@/images/heroimages/1 (2).jpg'
+import img3 from '@/images/heroimages/1 (3).jpg'
+import img4 from '@/images/heroimages/1 (4).jpg'
+import img5 from '@/images/heroimages/1 (5).jpg'
+import img6 from '@/images/heroimages/1 (6).jpg'
+import img7 from '@/images/heroimages/1 (7).jpg'
+import img8 from '@/images/heroimages/1 (8).jpg'
+
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
+
+//Firebase Api Key
 const firebaseConfig = {
   apiKey: 'AIzaSyACyiB2f-Sl8fbez4sjwBxJwn-eGadnXcg',
   authDomain: 'auth-44578.firebaseapp.com',
@@ -32,44 +43,53 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 const database = firebase.firestore()
 
-// const images = [
-//   {
-//     link: 'https://www.officialmediaguide.com/ie06/wp-content/uploads/sites/73/2019/10/abstract01-1024x575.jpg',
-//   },
-//   {
-//     link: 'https://cis.ieee.org/images/files/slideshow/video-archive.jpg',
-//   },
-//   {
-//     link: 'https://pbs.twimg.com/media/Fb_Au2NWYAIIlMt.jpg',
-//   },
-//   {
-//     link: 'https://media-exp1.licdn.com/dms/image/C4D22AQHkoGeI2vPz8g/feedshare-shrink_2048_1536/0/1648835983648?e=2147483647&v=beta&t=gm23waWUjKeHFpl3-SYomM07jW19WQCiLlX1gtzFshQ',
-//   },
-//   {
-//     link: 'https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
-//   },
-// ]
+const images = [
+  {
+    link: img1,
+  },
+  {
+    link: img2,
+  },
+  {
+    link: img3,
+  },
+  {
+    link: img4,
+  },
+  {
+    link: img5,
+  },
+  {
+    link: img6,
+  },
+  {
+    link: img7,
+  },
+  {
+    link: img8,
+  },
+]
 
 export function Hero() {
-  const [images, setImages] = useState([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState(null)
-  const swiperRef = useRef(null)
+  // const [images, setImages] = useState([])
+  // const [loading, setLoading] = useState(true)
+  // const [error, setError] = useState(null)
+  // const swiperRef = useRef(null)
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await database.collection('images').get()
-        const data = response.docs.map((doc) => doc.data())
-        setImages(data)
-        setLoading(false)
-      } catch (error) {
-        setError(error)
-        setLoading(false)
-      }
-    }
-    fetchData()
-  }, [])
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await database.collection('images').get()
+  //       const data = response.docs.map((doc) => doc.data())
+  //       setImages(data)
+  //       setLoading(false)
+  //     } catch (error) {
+  //       setError(error)
+  //       setLoading(false)
+  //     }
+  //   }
+  //   fetchData()
+  // }, [])
 
   return (
     <>
@@ -103,17 +123,20 @@ export function Hero() {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <img
+            <Image
               className="lg:h-128 h-96 w-full object-fill"
-              src={image.url}
+              src={image.link}
               alt={index}
+              width={1920}
+              height={700}
+              objectFit="cover"
               border-radius="10px"
             />
           </SwiperSlide>
         ))}
       </Swiper>
       <Container className="pt-5 pb-16 text-center lg:pt-8">
-        <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-800 bg-slate-100 p-2 rounded-xl">
+        <p class="mx-auto mt-6 max-w-2xl rounded-xl bg-slate-100 p-2 text-lg tracking-tight text-slate-800">
           <b>IEEE Computational Intelligence Society (CIS)</b> is a professional
           society of IEEE focusing on “the theory, design, application, and
           development of biologically and linguistically motivated computational
