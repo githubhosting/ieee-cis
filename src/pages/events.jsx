@@ -52,7 +52,7 @@ export default function Login() {
         <section className="mt-10 py-5 sm:py-8">
           <Container>
             <div className="mx-auto max-w-2xl sm:text-center">
-              <h2 className="text-center text-3xl font-medium tracking-tight text-gray-900">
+              <h2 className="text-center text-3xl font-semibold tracking-tight text-sky-600">
                 Events :
               </h2>
               <p className="text-centre mt-2 px-3 text-sm text-gray-600 lg:text-base">
@@ -66,56 +66,7 @@ export default function Login() {
               role="list"
               className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-6 text-sm sm:mt-10 sm:grid-cols-2 md:gap-y-10 lg:max-w-none lg:grid-cols-2"
             >
-              {/* <li className="rounded-2xl border border-gray-200 p-5">
-                <h3 className="text-center text-base font-semibold text-gray-900">
-                  Events 2020
-                </h3>
-                <p className="mt-2 text-center text-gray-700">Even Semester</p>
-                <div>
-                  <button
-                    onClick={onButtonClick}
-                    class="mt-2 flex transform items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-white shadow-md transition-colors duration-300 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-1 sm:w-auto"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="mx-1 h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
-                      />
-                    </svg>
-                    <span class="mx-1">Download</span>
-                  </button>
-                </div>
-                <div className="flex justify-center">
-                  <Link href="/documents/Event_Report_2020.pdf">
-                    <a class="mt-2 flex transform items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-white shadow-md transition-colors duration-300 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-1 sm:w-auto">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="mx-1 h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
-                        />
-                      </svg>
-                      <span class="mx-1">View</span>
-                    </a>
-                  </Link>
-                </div>
-              </li> */}
-              <li className="neumorphism mb-10 rounded-2xl border border-white p-5">
+              <li className="neumorphism mb-10 rounded-2xl border border-gray-200 p-5">
                 <h3 className="text-center text-3xl font-semibold text-gray-900">
                   Events 2020
                 </h3>
@@ -123,7 +74,7 @@ export default function Login() {
                   Activities conducted for the year 2019-2020 under IEEE CIS
                 </p>
                 <div class="flex justify-center overflow-hidden p-2 ">
-                  <div class="border-grey-200 space-y-2 rounded-lg border p-4 sm:-mx-1 sm:flex sm:space-y-0">
+                  <div class="space-y-2 rounded-lg border border-gray-200 p-4 sm:-mx-1 sm:flex sm:space-y-0">
                     <button
                       onClick={onButtonClick}
                       class="flex w-full transform items-center justify-center rounded-md bg-blue-600 px-7 py-1.5 text-base text-white shadow-lg transition-colors duration-300 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-1 sm:w-auto"
@@ -176,7 +127,7 @@ export default function Login() {
                   </div>
                 </div>
               </li>
-              <li className="neumorphism mb-10 rounded-2xl border border-white p-5">
+              <li className="neumorphism mb-10 rounded-2xl border border-gray-200 p-5">
                 <h3 className="text-center text-3xl font-semibold text-gray-900">
                   Events 2021
                 </h3>
@@ -184,7 +135,7 @@ export default function Login() {
                   Activities conducted for the year 2021 under IEEE CIS.
                 </p>
                 <div class="flex justify-center overflow-hidden p-2 ">
-                  <div class="border-grey-200 space-y-2 rounded-lg border p-4 sm:-mx-1 sm:flex sm:space-y-0">
+                  <div class="space-y-2 rounded-lg border border-gray-200 p-4 sm:-mx-1 sm:flex sm:space-y-0">
                     <button
                       onClick={onButtonClick2}
                       class="flex w-full transform items-center justify-center rounded-md bg-blue-600 px-7 py-1.5 text-base text-white shadow-lg transition-colors duration-300 hover:bg-blue-500 focus:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-1 sm:w-auto"

@@ -70,36 +70,36 @@ export default function Login() {
           <h1 class="text-center text-3xl font-semibold capitalize text-gray-800">
             Our <span class="text-sky-600">Executive Team</span>
           </h1>
-
-          <p class="mx-auto my-6 max-w-2xl text-center text-gray-500"></p>
-
-          <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-2">
+          <div class="mt-5 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-8 xl:grid-cols-3">
             {members.map((member) => (
-              <div class="transform cursor-pointer rounded-xl border px-12 py-8 transition-colors duration-300">
-                <div class="flex flex-col sm:-mx-4 sm:flex-row">
-                  <div>
+              <div class="border-n transform cursor-pointer rounded-xl border-sky-300 px-7 py-8 shadow-md transition-colors duration-300">
+                <div class="sm:-mx-4 sm:flex-row">
+                  <div className="mb-5 flex justify-center">
                     <Image
-                      class="flex-shrink-0 rounded-lg object-cover  sm:mx-4"
+                      class="flex-shrink-0 rounded-xl object-cover sm:mx-4"
                       src={member.image}
-                      alt=""
-                      width="270px"
-                      height="270px"
+                      width="220px"
+                      height="220px"
                     />
                   </div>
-                  <div class="mt-4 sm:mx-4 sm:mt-0">
+                  <div class="mt-4 sm:mx-4 sm:mt-3">
                     <h1 class="text-xl font-semibold capitalize text-gray-700 group-hover:text-white ">
                       {member.name}
                     </h1>
-                    <h3 class="mb-3 text-gray-500">{member.designation}</h3>
+                    <h3 class="mb-3 text-base font-medium text-gray-800">
+                      {member.designation}
+                    </h3>
                   </div>
                 </div>
                 <p class="mt-4 text-gray-500">{member.description}</p>
-                <a
-                  class="text-md group mt-10 inline-flex items-center  justify-center rounded bg-sky-600  py-2 px-4  text-sm font-semibold text-white hover:bg-slate-700 hover:text-slate-100 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 active:bg-slate-800 active:text-slate-300"
-                  href={member.profile}
-                >
-                  View Profile
-                </a>
+                <div>
+                  <a
+                    class="buttonview text-md group mt-10 inline-flex items-center justify-center rounded bg-sky-600 py-2 px-4  text-sm font-semibold text-white shadow-md hover:bg-slate-700 hover:text-slate-100 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 active:bg-slate-800 active:text-slate-300"
+                    href={member.profile}
+                  >
+                    View Profile
+                  </a>
+                </div>
               </div>
             ))}
           </div>

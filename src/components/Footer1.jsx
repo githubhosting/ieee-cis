@@ -26,7 +26,7 @@ export function Footer() {
               <div class="inline-flex items-center text-sky-500">
                 <button
                   type="button"
-                  class="shadowj w-full  rounded-lg bg-sky-600 py-2 px-4 text-center text-base font-semibold text-white transition duration-200 ease-in hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2  focus:ring-offset-sky-200 "
+                  class="button w-full rounded-lg bg-sky-600 py-2 px-4 text-center text-base font-bold text-white transition duration-200 ease-in hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2  focus:ring-offset-sky-200 "
                 >
                   <a href="https://www.ieee.org/membership/join/index.html">
                     Join IEEE

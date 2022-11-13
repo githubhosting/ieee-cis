@@ -38,12 +38,12 @@ export default function Login() {
         <section className="mt-10 py-5 sm:py-8">
           <Container>
             <div className="mx-auto max-w-2xl pb-10 sm:text-center">
-              <h2 className="text-center text-3xl font-medium tracking-tight text-sky-600">
+              <h2 className="text-center text-3xl font-semibold tracking-tight text-sky-600">
                 Newsletter
               </h2>
             </div>
             <div class="flex justify-center">
-              <div class="block max-w-sm rounded-lg border border-gray-100 bg-white text-center shadow-2xl">
+              <div class="block max-w-sm rounded-xl border border-gray-200 bg-white text-center shadow-2xl">
                 <div class="p-6">
                   <h5 class="mb-2 text-xl font-medium text-gray-900">
                     News Letter 2022

@@ -18,7 +18,7 @@ export default function Projects() {
       <section class="body-font py-16 text-gray-600">
         <div class="mb-10 text-center">
           <h1 class="title-font mb-4 text-center text-2xl font-semibold text-gray-900 sm:text-3xl">
-            List of Projects
+            List of <span class="text-sky-600">Projects</span>
           </h1>
           <p className="text-center">
             Following are the list of funded projects <br></br>of IEEE CIS

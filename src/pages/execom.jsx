@@ -103,7 +103,7 @@ export default function Login() {
               <div class="-m-2 flex flex-wrap justify-center">
                 {members.map((member) => (
                   <div class="w-full p-2 md:w-1/2 lg:w-1/3">
-                    <div class="flex h-full items-center rounded-lg border border-gray-50 p-4 shadow-md">
+                    <div class="flex h-full items-center rounded-lg border border-gray-200 p-4 shadow-md">
                       <Image
                         alt="team"
                         class="mr-4 h-16 w-16 flex-shrink-0 rounded-full bg-gray-100 object-cover object-center"

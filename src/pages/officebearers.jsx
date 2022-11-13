@@ -71,20 +71,12 @@ export default function officebearers() {
           <div class="mb-6 grid gap-8 md:grid-cols-2 lg:mb-16">
             {members.map((member) => (
               <div class="flex flex-col overflow-hidden rounded-lg bg-white shadow-lg">
-                {/* <div class="flex-shrink-0">
-                  <img
-                    class="h-48 w-full object-cover"
-                    src={member.image}
-                    alt=""
-                  />
-                </div> */}
                 <div class="flex justify-center">
                   <Image
                     class="flex-shrink-0 rounded-lg object-cover sm:mx-4"
                     src={member.image}
-                    alt=""
-                    width="270px"
-                    height="270px"
+                    width="250px"
+                    height="250px"
                   />
                 </div>
                 <div class="flex flex-1 flex-col justify-between p-6">
@@ -92,14 +84,14 @@ export default function officebearers() {
                     <p class="text-md flex justify-center font-medium text-sky-600">
                       {member.designation}
                     </p>
-                    <a href="#" class="mt-2 block">
+                    <div class="mt-2 block">
                       <p class="flex justify-center text-xl font-semibold text-gray-900">
                         {member.name}
                       </p>
                       <p class="mt-3 flex justify-center text-center text-base text-gray-500">
                         {member.description}
                       </p>
-                    </a>
+                    </div>
                   </div>
                   <div class="mt-6 flex items-center justify-center">
                     <button class="rounded-md bg-sky-600 py-2 px-4 text-white hover:bg-black">

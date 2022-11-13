@@ -103,11 +103,11 @@ export default function Login() {
         className="scroll-mt-8 py-8 sm:scroll-mt-32 sm:py-5 lg:py-8"
       >
         <Container>
-          <SectionHeading number="" id="resources-title">
+          {/* <SectionHeading number="" id="resources-title">
             Gallery
-          </SectionHeading>
-          <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-            All Events Photos
+          </SectionHeading> */}
+          <p className="mt-2 flex justify-center font-display text-4xl font-medium tracking-tight text-slate-800">
+            Event <span className="ml-2 text-sky-600"> Photos</span>
           </p>
           {/* <p className="mt-4 text-lg tracking-tight text-slate-700">
             Sample Text
